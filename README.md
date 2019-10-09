@@ -67,6 +67,5 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
 
-### SASS Watch
-
+### `SASS Watch`
 sass --watch src/scss/App.scss:src/App.css
