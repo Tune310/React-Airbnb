@@ -268,7 +268,10 @@ input.where:focus {
 }
 
 .counter span {
+  -webkit-flex-grow: 1;
+  -moz-flex-grow: 1;
   flex-grow: 1;
+  -ms-flex-positive: 1;
   text-align: center !important;
 }
 
@@ -280,11 +283,17 @@ input.where:focus {
   display: -moz-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex-grow: 0.5;
+  -moz-flex-grow: 0.5;
   flex-grow: 0.5;
+  -ms-flex-positive: 0.5;
 }
 
 .counter-score {
+  -webkit-flex-grow: 1;
+  -moz-flex-grow: 1;
   flex-grow: 1;
+  -ms-flex-positive: 1;
 }
 
 .counter-action {

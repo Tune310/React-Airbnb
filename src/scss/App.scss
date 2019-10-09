@@ -221,17 +221,17 @@
   }
   
   .counter span {
-    flex-grow: 1;
+    @include flex-grow(1);
     text-align: center !important;
   }
   
   .counter-components {
     @include display(flex);
-    flex-grow: 0.5;
+    @include flex-grow(0.5);
   }
   
   .counter-score {
-    flex-grow: 1;
+    @include flex-grow(1);
   }
   
   .counter-action {
