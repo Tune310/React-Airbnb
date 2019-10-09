@@ -1,3 +1,9 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 .App {
   text-align: center;
 }
@@ -10,7 +16,16 @@
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  box-orient: vertical;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  box-direction: normal;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
   flex-direction: column;
+  -ms-flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
@@ -20,3 +35,335 @@
 .App-link {
   color: #09d3ac;
 }
+
+.header-container {
+  background: url("oregon-background.jpg");
+  background-size: cover;
+  background-position: 100% 30%;
+  min-height: 100vh;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  box-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  -ms-flex-align: center;
+  height: 80px;
+  color: white;
+}
+
+.navbar svg {
+  height: 1em;
+  width: 2em;
+  display: block;
+  fill: currentColor;
+  padding-left: 26px;
+  font-size: 34px;
+}
+
+.navbar ul {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+}
+
+.navbar ul li {
+  list-style-type: none;
+}
+
+.navbar ul li a {
+  color: #ffffff;
+  margin-right: 15px;
+  margin-left: 15px;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none !important;
+}
+
+.booking {
+  background: #ffffff !important;
+  border-radius: 4px !important;
+  padding: 32px !important;
+  padding-bottom: 24px !important;
+  width: 441px !important;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12) !important;
+}
+
+.booking span {
+  font-size: 12px !important;
+  font-weight: 800 !important;
+  letter-spacing: 1px !important;
+  margin-top: 8px !important;
+  margin-bottom: 8px !important;
+  display: block;
+}
+
+.booking input.where {
+  font-size: 17px !important;
+  background-color: transparent !important;
+  border: 0px !important;
+  margin: 0px !important;
+  padding: 0px !important;
+  width: 100% !important;
+  text-overflow: ellipsis !important;
+}
+
+input.where:focus {
+  outline: none;
+}
+
+.where-container {
+  -webkit-box-align: center !important;
+  -ms-flex-align: center !important;
+  padding-left: 12px !important;
+  padding-right: 12px !important;
+  position: relative !important;
+  -webkit-align-items: center !important;
+  align-items: center !important;
+  background-color: #ffffff !important;
+  border: 1px solid #EBEBEB !important;
+  border-radius: 4px !important;
+  display: -webkit-box !important;
+  display: -moz-box !important;
+  display: -ms-flexbox !important;
+  display: -webkit-flex !important;
+  display: flex !important;
+  height: 48px !important;
+  width: 100% !important;
+}
+
+.checkin-out {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.checkin-container {
+  width: 50%;
+}
+
+.checkout-container {
+  width: 50%;
+}
+
+.checkin-input {
+  font-size: 16px !important;
+  line-height: 24px !important;
+  letter-spacing: normal !important;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif !important;
+  text-transform: undefined !important;
+  color: #484848 !important;
+  padding-top: 11px !important;
+  padding-bottom: 11px !important;
+  font-weight: normal !important;
+  background-color: transparent !important;
+  border: 0px !important;
+  padding-left: 11px !important;
+  padding-right: 11px !important;
+  width: 100% !important;
+  margin: 0px !important;
+}
+
+.checkout-input {
+  font-size: 16px !important;
+  line-height: 24px !important;
+  letter-spacing: normal !important;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif !important;
+  text-transform: undefined !important;
+  color: #484848 !important;
+  padding-top: 11px !important;
+  padding-bottom: 11px !important;
+  font-weight: normal !important;
+  background-color: transparent !important;
+  border: 0px !important;
+  padding-left: 11px !important;
+  padding-right: 11px !important;
+  width: 100% !important;
+  margin: 0px !important;
+}
+
+.checkinout-input-wrapper {
+  font-size: 16px !important;
+  line-height: 24px !important;
+  letter-spacing: normal !important;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif !important;
+  text-transform: undefined !important;
+  color: #484848 !important;
+  border: 1px solid #EBEBEB !important;
+  padding-top: undefined !important;
+  padding-bottom: undefined !important;
+  border-width: 1px !important;
+  border-style: solid !important;
+  border-radius: 4px !important;
+  background-color: #ffffff !important;
+  position: relative !important;
+  z-index: 0 !important;
+  margin-bottom: 0px !important;
+  margin-top: 0px !important;
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+  display: block !important;
+  width: 100% !important;
+}
+
+.dropdown-toggle {
+  background: none !important;
+  position: relative !important;
+  text-align: left !important;
+  border: 1px solid #EBEBEB !important;
+  border-radius: 3px !important;
+  padding: 11px !important;
+  padding-top: 8px !important;
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  line-height: normal !important;
+  display: block !important;
+  width: 100% !important;
+  height: 48px !important;
+  color: #767676 !important;
+}
+
+.dropdown-toggle span {
+  display: inline;
+}
+
+.counter {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: distribute;
+  -moz-box-pack: distribute;
+  box-pack: distribute;
+  -webkit-justify-content: space-around;
+  -moz-justify-content: space-around;
+  -ms-justify-content: space-around;
+  -o-justify-content: space-around;
+  justify-content: space-around;
+  -ms-flex-pack: distribute;
+}
+
+.counter span {
+  flex-grow: 1;
+  text-align: center !important;
+}
+
+.counter-components {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-grow: 0.5;
+}
+
+.counter-score {
+  flex-grow: 1;
+}
+
+.counter-action {
+  display: inline-block !important;
+  cursor: pointer !important;
+  text-align: center !important;
+  line-height: 1 !important;
+  position: relative !important;
+  touch-action: manipulation !important;
+  height: 32px !important;
+  width: 32px !important;
+  box-shadow: none !important;
+  border-radius: 50% !important;
+  border-style: solid !important;
+  border-color: #008489 !important;
+  background: transparent !important;
+  border-width: 1px !important;
+}
+
+.button-search {
+  display: inline-block !important;
+  margin: 0px !important;
+  position: relative !important;
+  text-align: center !important;
+  text-decoration: none !important;
+  -webkit-transition-property: background, border-color, color !important;
+  -moz-transition-property: background, border-color, color !important;
+  transition-property: background, border-color, color !important;
+  -webkit-transition-duration: 0.2s !important;
+  transition-duration: 0.2s !important;
+  -webkit-transition-timing-function: ease-out !important;
+  transition-timing-function: ease-out !important;
+  width: auto !important;
+  cursor: pointer !important;
+  border-radius: 4px !important;
+  font-size: 16px !important;
+  line-height: 24px !important;
+  letter-spacing: normal !important;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif !important;
+  text-transform: undefined !important;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  font-weight: 800 !important;
+  border-width: 2px !important;
+  border-style: solid !important;
+  padding-left: 22px !important;
+  padding-right: 22px !important;
+  min-width: 71.193495505px !important;
+  box-shadow: none !important;
+  background: #FF5A5F !important;
+  border-color: transparent !important;
+  color: #ffffff !important;
+  margin-top: 25px !important;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.just-flex-end {
+  -webkit-box-pack: end;
+  -moz-box-pack: end;
+  box-pack: end;
+  -webkit-justify-content: flex-end;
+  -moz-justify-content: flex-end;
+  -ms-justify-content: flex-end;
+  -o-justify-content: flex-end;
+  justify-content: flex-end;
+  -ms-flex-pack: end;
+}
+
+.maximum-width {
+  width: 100%;
+}
+
+/*# sourceMappingURL=App.css.map */
