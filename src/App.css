@@ -1,3 +1,152 @@
+@media screen and (min-width: 1128px) {
+  .explore-airbnb {
+    position: relative !important;
+    max-width: 1760px !important;
+    padding-right: 80px !important;
+    padding-left: 80px !important;
+    margin: 0px auto !important;
+    background-color: white !important;
+    padding-bottom: 30px;
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
+    color: #484848 !important;
+  }
+}
+.explore-airbnb h3 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.explore-airbnb span {
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.explore-ul {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100% !important;
+  overflow-x: auto !important;
+  overflow-y: hidden !important;
+  padding-left: 0px !important;
+  margin-bottom: 0px !important;
+  margin-top: 0px !important;
+  min-width: 100% !important;
+  scroll-snap-type: x mandatory !important;
+  list-style: none !important;
+}
+.explore-ul a {
+  color: #484848 !important;
+  width: 100% !important;
+  margin-right: 10px;
+}
+.explore-ul li {
+  scroll-snap-align: start !important;
+  scroll-snap-stop: always !important;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border-style: solid !important;
+  border-color: transparent !important;
+  width: 25% !important;
+}
+.explore-ul .div-left-one {
+  width: 96px !important;
+  height: 72px !important;
+  overflow: auto !important;
+  background: url("./images/explore-one.jpg") !important;
+  position: relative !important;
+  background-size: cover !important;
+  background-position: 50% 50% !important;
+  background-repeat: no-repeat !important;
+}
+.explore-ul .div-left-two {
+  width: 96px !important;
+  height: 72px !important;
+  overflow: auto !important;
+  background: url("./images/explore-two.jpg") !important;
+  position: relative !important;
+  background-size: cover !important;
+  background-position: 50% 50% !important;
+  background-repeat: no-repeat !important;
+}
+.explore-ul .div-left-three {
+  width: 96px !important;
+  height: 72px !important;
+  overflow: auto !important;
+  background: url("./images/explore-three.jpg") !important;
+  position: relative !important;
+  background-size: cover !important;
+  background-position: 50% 50% !important;
+  background-repeat: no-repeat !important;
+}
+.explore-ul .div-left-four {
+  width: 96px !important;
+  height: 72px !important;
+  overflow: auto !important;
+  background: url("./images/explore-four.jpg") !important;
+  position: relative !important;
+  background-size: cover !important;
+  background-position: 50% 50% !important;
+  background-repeat: no-repeat !important;
+}
+.explore-ul .div-right {
+  width: 50% !important;
+  vertical-align: middle !important;
+  white-space: normal !important;
+  padding: 14px 16px 10px !important;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100% !important;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  box-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  -ms-flex-align: center;
+  overflow: hidden;
+}
+.explore-ul .explore-column {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: transparent !important;
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px !important;
+  float: left !important;
+  margin-bottom: 4px !important;
+  text-align: left !important;
+  width: 100% !important;
+  border-width: 1px !important;
+  border-style: solid !important;
+  border-color: rgba(0, 0, 0, 0.1) !important;
+  border-image: initial !important;
+  border-radius: 3px !important;
+  padding: 0px !important;
+  height: 74px;
+  overflow: hidden !important;
+  margin-right: 5px;
+}
+
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -37,10 +186,12 @@
 }
 
 .header-container {
-  background: url("oregon-background.jpg");
+  background: url("images/oregon-background.jpg");
   background-size: cover;
-  background-position: 100% 30%;
+  background-position: center;
+  background-repeat: no-repeat;
   min-height: 100vh;
+  padding-bottom: 70px;
 }
 
 .navbar {
@@ -69,7 +220,6 @@
   width: 2em;
   display: block;
   fill: currentColor;
-  padding-left: 26px;
   font-size: 34px;
 }
 
@@ -104,6 +254,11 @@
   padding-bottom: 24px !important;
   width: 441px !important;
   box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12) !important;
+  margin-left: 80px;
+}
+.booking h1 {
+  font-size: 32px;
+  font-weight: 600;
 }
 
 .booking span {

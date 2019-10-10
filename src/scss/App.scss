@@ -1,5 +1,7 @@
 @import "bourbon/bourbon";
 
+@import "partials/explore";
+
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -30,10 +32,12 @@
   }
   
   .header-container {
-    background: url("oregon-background.jpg");
+    background: url("images/oregon-background.jpg");
     background-size: cover;
-    background-position: 100% 30%;
+    background-position: center;
+    background-repeat: no-repeat;
     min-height: 100vh;
+    padding-bottom: 70px;
   }
   
   .navbar {
@@ -48,7 +52,6 @@
     width: 2em;
     display: block;
     fill: currentColor;
-    padding-left: 26px;
     font-size: 34px;
   }
   
@@ -77,6 +80,12 @@
     padding-bottom: 24px !important;
     width: 441px !important;
     box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12) !important;
+    margin-left: 80px;
+
+    h1 {
+      font-size: 32px;
+      font-weight: 600;
+    }
   }
   
   .booking span {
