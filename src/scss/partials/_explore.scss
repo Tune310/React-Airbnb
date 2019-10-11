@@ -6,6 +6,7 @@
         padding-left: 80px !important;
         margin: 0px auto !important;
         background-color: white !important;
+        padding-top: 30px;
         padding-bottom: 30px;
         font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
         color: rgb(72, 72, 72) !important;
@@ -19,8 +20,10 @@
 }
 
 .explore-airbnb span {
-    font-size: 17px;
-    font-weight: 700;
+    font-size: 14px;
+    font-weight: 600;
+    position: relative;
+    bottom: 5px;
 }
 .explore-ul {
         @include display(flex);
@@ -50,62 +53,59 @@
         }
 
         .div-left-one {
-            width: 96px !important;
-            height: 72px !important;
+            width: 100% !important;
+            height: 100vh !important;
             overflow: auto !important;
             background: url('./images/explore-one.jpg') !important;
             position: relative !important;
-            background-size: cover !important;
-            background-position: 50% 50% !important;
+            background-size: contain !important;
             background-repeat: no-repeat !important;
         }
 
         .div-left-two {
-            width: 96px !important;
-            height: 72px !important;
+            width: 100% !important;
+            height: 100vh !important;
             overflow: auto !important;
             background: url('./images/explore-two.jpg') !important;
             position: relative !important;
-            background-size: cover !important;
-            background-position: 50% 50% !important;
+            background-size: contain !important;
             background-repeat: no-repeat !important;
         }
 
         .div-left-three {
-            width: 96px !important;
-            height: 72px !important;
+            width: 100% !important;
+            height: 100vh !important;
             overflow: auto !important;
             background: url('./images/explore-three.jpg') !important;
             position: relative !important;
-            background-size: cover !important;
-            background-position: 50% 50% !important;
+            background-size: contain !important;
             background-repeat: no-repeat !important;
         }
 
         .div-left-four {
-            width: 96px !important;
-            height: 72px !important;
+            width: 100% !important;
+            height: 100vh !important;
             overflow: auto !important;
             background: url('./images/explore-four.jpg') !important;
             position: relative !important;
-            background-size: cover !important;
-            background-position: 50% 50% !important;
+            background-size: contain !important;
             background-repeat: no-repeat !important;
         }
 
         .div-right {
-            width: 50% !important;
+            width: 100% !important;
             vertical-align: middle !important;
             white-space: normal !important;
-            padding: 14px 16px 10px !important;
+            padding: 2px 16px 10px !important;
             @include display(flex);
-            height: 100% !important;
+            height: 30% !important;
             @include align-items(center);
             overflow: hidden;
         }
 
         .explore-column {
             @include display(flex);
+            @include flex-direction(column);
             background-color: transparent !important;
             box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px !important;
             float: left !important;
@@ -116,9 +116,9 @@
             border-style: solid !important;
             border-color: rgba(0, 0, 0, 0.1) !important;
             border-image: initial !important;
-            border-radius: 3px !important;
+            border-radius: 12px !important;
             padding: 0px !important;
-            height: 74px;
+            height: 234px;
             overflow: hidden !important;
             margin-right: 5px;
         }

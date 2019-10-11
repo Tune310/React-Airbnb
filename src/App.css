@@ -6,6 +6,7 @@
     padding-left: 80px !important;
     margin: 0px auto !important;
     background-color: white !important;
+    padding-top: 30px;
     padding-bottom: 30px;
     font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
     color: #484848 !important;
@@ -17,8 +18,10 @@
 }
 
 .explore-airbnb span {
-  font-size: 17px;
-  font-weight: 700;
+  font-size: 14px;
+  font-weight: 600;
+  position: relative;
+  bottom: 5px;
 }
 
 .explore-ul {
@@ -59,50 +62,46 @@
   width: 25% !important;
 }
 .explore-ul .div-left-one {
-  width: 96px !important;
-  height: 72px !important;
+  width: 100% !important;
+  height: 100vh !important;
   overflow: auto !important;
   background: url("./images/explore-one.jpg") !important;
   position: relative !important;
-  background-size: cover !important;
-  background-position: 50% 50% !important;
+  background-size: contain !important;
   background-repeat: no-repeat !important;
 }
 .explore-ul .div-left-two {
-  width: 96px !important;
-  height: 72px !important;
+  width: 100% !important;
+  height: 100vh !important;
   overflow: auto !important;
   background: url("./images/explore-two.jpg") !important;
   position: relative !important;
-  background-size: cover !important;
-  background-position: 50% 50% !important;
+  background-size: contain !important;
   background-repeat: no-repeat !important;
 }
 .explore-ul .div-left-three {
-  width: 96px !important;
-  height: 72px !important;
+  width: 100% !important;
+  height: 100vh !important;
   overflow: auto !important;
   background: url("./images/explore-three.jpg") !important;
   position: relative !important;
-  background-size: cover !important;
-  background-position: 50% 50% !important;
+  background-size: contain !important;
   background-repeat: no-repeat !important;
 }
 .explore-ul .div-left-four {
-  width: 96px !important;
-  height: 72px !important;
+  width: 100% !important;
+  height: 100vh !important;
   overflow: auto !important;
   background: url("./images/explore-four.jpg") !important;
   position: relative !important;
-  background-size: cover !important;
-  background-position: 50% 50% !important;
+  background-size: contain !important;
   background-repeat: no-repeat !important;
 }
 .explore-ul .div-right {
-  width: 50% !important;
+  width: 100% !important;
   vertical-align: middle !important;
   white-space: normal !important;
-  padding: 14px 16px 10px !important;
+  padding: 2px 16px 10px !important;
   display: -webkit-box;
   display: -moz-box;
   display: box;
@@ -110,7 +109,7 @@
   display: -moz-flex;
   display: -ms-flexbox;
   display: flex;
-  height: 100% !important;
+  height: 30% !important;
   -webkit-box-align: center;
   -moz-box-align: center;
   box-align: center;
@@ -130,6 +129,16 @@
   display: -moz-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  box-orient: vertical;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  box-direction: normal;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-direction: column;
   background-color: transparent !important;
   box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px !important;
   float: left !important;
@@ -140,9 +149,9 @@
   border-style: solid !important;
   border-color: rgba(0, 0, 0, 0.1) !important;
   border-image: initial !important;
-  border-radius: 3px !important;
+  border-radius: 12px !important;
   padding: 0px !important;
-  height: 74px;
+  height: 234px;
   overflow: hidden !important;
   margin-right: 5px;
 }
@@ -438,10 +447,8 @@ input.where:focus {
   display: -moz-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-grow: 0.5;
-  -moz-flex-grow: 0.5;
-  flex-grow: 0.5;
-  -ms-flex-positive: 0.5;
+  width: 100%;
+  max-width: 86px;
 }
 
 .counter-score {

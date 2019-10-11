@@ -8,7 +8,7 @@ import { Button } from 'reactstrap';
 function App() {
   return [
     <Header />,
-    <Explore />
+    <Explore name="Explore Airbnb" />
   ];
 }
 

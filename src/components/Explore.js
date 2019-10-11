@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Explore = () => {
+const Explore = (props) => {
     return (
         <div className="explore-airbnb">
-            <h3>Explore Airbnb</h3>
+            <h3>{props.name}</h3>
             <ul className="explore-ul">
                 <li>
                     <a href="#">

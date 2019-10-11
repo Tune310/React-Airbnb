@@ -236,7 +236,8 @@
   
   .counter-components {
     @include display(flex);
-    @include flex-grow(0.5);
+    width: 100%;
+    max-width: 86px;
   }
   
   .counter-score {
