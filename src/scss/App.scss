@@ -2,6 +2,12 @@
 
 @import "partials/explore";
 
+@import "partials/movie";
+
+@import "partials/losangeles";
+
+@import "partials/stay";
+
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -313,4 +319,72 @@
   
   .maximum-width {
     width: 100%;
+  }
+
+  ul li {
+    list-style-type: none;
+  }
+
+  span.right-arrow {
+    color: rgb(0, 132, 137);
+    display: none !important;
+
+    @media (min-width: 744px){
+      display: inline !important;
+      margin-left: 6px !important;
+    }
+
+    svg {
+      fill: currentColor;
+      width: 10px !important;
+      height: 10px !important;
+    }
+  }
+
+  .container {
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+    max-width: 1600px !important;
+    margin-top: 32px !important;
+    margin-bottom: 32px !important;
+
+    @media (min-width: 744px) {
+        padding-left: 40px !important;
+        padding-right: 40px !important;
+        margin-top: 40px !important;
+        margin-bottom: 40px !important;
+    }
+    
+    @media (min-width: 1128px) {
+        position: relative !important;
+        max-width: 1760px !important;
+        padding-right: 80px !important;
+        padding-left: 80px !important;
+        margin: 0px auto !important;
+        margin-top: 40px !important;
+        margin-bottom: 40px !important;
+    }
+  }
+
+  h3 {
+    font-weight: 700 !important;
+    margin-bottom: 0px !important;
+    font-size: 24px !important;
+    line-height: 30px !important;
+    letter-spacing: normal !important;
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
+    color: #484848 !important;
+    padding-top: 2px !important;
+    padding-bottom: 2px !important;
+  }
+
+  h4 {
+    font-size: 16px !important;
+    line-height: 22px !important;
+    letter-spacing: normal !important;
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
+    color: rgb(72, 72, 72) !important;
+    font-weight: normal !important;
+    margin-top: 0px !important;
+    margin-bottom: 15px !important;
   }

@@ -1,0 +1,182 @@
+.today-in-los-angeles-container {
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+    max-width: 1600px !important;
+    margin-top: 32px !important;
+    margin-bottom: 32px !important;
+
+    @media (min-width: 744px) {
+        padding-left: 40px !important;
+        padding-right: 40px !important;
+        margin-top: 40px !important;
+        margin-bottom: 40px !important;
+    }
+    
+    @media (min-width: 1128px) {
+        position: relative !important;
+        max-width: 1760px !important;
+        padding-right: 80px !important;
+        padding-left: 80px !important;
+        margin: 0px auto !important;
+        margin-top: 40px !important;
+        margin-bottom: 40px !important;
+    }
+
+    h3 {
+        font-weight: 700 !important;
+        margin-bottom: 0px !important;
+        font-size: 24px !important;
+        line-height: 30px !important;
+        letter-spacing: normal !important;
+        font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
+        color: rgb(72, 72, 72) !important;
+        padding-top: 2px !important;
+        padding-bottom: 10px !important;
+    }
+
+    ul {
+        @include display(flex);
+        padding-inline-start: 0px;
+    }
+
+    li {
+        width: 20% !important;
+        margin-right: 15px;
+    }
+
+    a {
+        text-decoration: none !important;
+        color: rgb(72, 72, 72) !important;
+    }
+
+    .los-angeles-description {
+        overflow-wrap: break-word !important;
+        font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
+        font-size: 16px !important;
+        font-weight: 700 !important;
+        line-height: 1.375em !important;
+        text-overflow: ellipsis !important;
+        max-height: 4.125em !important;
+        -webkit-line-clamp: 3 !important;
+        display: -webkit-box !important;
+        -webkit-box-orient: vertical !important;
+        margin: 0px !important;
+        overflow: hidden !important;
+    }
+
+    .los-angeles-city {
+        overflow-wrap: break-word !important;
+        font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
+        font-size: 12px !important;
+        font-weight: 700 !important;
+        line-height: 1.33333em !important;
+        color: rgb(118, 118, 118) !important;
+        text-transform: uppercase !important;
+        text-overflow: ellipsis !important;
+        max-width: 100% !important;
+        white-space: nowrap !important;
+        margin: 0px !important;
+        margin-top: 10px !important;
+        overflow: hidden !important;
+        display: inline-block !important;
+    }
+
+    .los-angeles-price {
+        overflow-wrap: break-word !important;
+        font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
+        font-size: 14px !important;
+        font-weight: 400 !important;
+        line-height: 1.28571em !important;
+        color: inherit !important;
+        text-overflow: ellipsis !important;
+        max-height: 3.85714em !important;
+        -webkit-line-clamp: 3 !important;
+        display: -webkit-box !important;
+        -webkit-box-orient: vertical !important;
+        margin: 0px !important;
+        margin-top: 4px !important;
+        margin-bottom: 4px !important;
+        overflow: hidden !important;
+    }
+
+    .losangeles-image img {
+        width: 100%;
+    }
+
+    span.rating {
+        display: block !important;
+        will-change: transform !important;
+        background-size: 9px 9px !important;
+        width: 10px !important;
+        height: 10px !important;
+        background-image: url("./images/rating.svg") !important;
+        transform: none !important;
+        background-repeat: no-repeat !important;
+        margin: 0 2px !important;
+    }
+
+    .rating-number {
+        overflow-wrap: break-word !important;
+        font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
+        font-size: 11px !important;
+        font-weight: 700 !important;
+        line-height: 1.33333em !important;
+        color: inherit !important;
+        margin: 0px !important;
+        color: rgb(0, 132, 137) !important;
+    }
+
+    .rate {
+        @include display(flex);
+        @include align-items(center);
+    }
+
+    .los-angeles-votes {
+        overflow-wrap: break-word !important;
+        font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
+        font-size: 11px !important;
+        font-weight: 400 !important;
+        line-height: 1.33333em !important;
+        color: rgb(118, 118, 118) !important;
+        margin: 0px !important;
+    }
+
+    div.show-all {
+        display: inline-block !important;
+        text-align: left !important;    
+        width: 100% !important;
+        margin-top: 8px !important;
+        
+        @media (min-width: 744px) {
+            margin-top: 4px !important;
+        }
+    }
+
+    div.show-all a {
+        cursor: pointer !important;
+        display: inline-block !important;
+        text-align: center !important;
+        text-decoration-line: none !important;
+        white-space: nowrap !important;
+        width: 100% !important;
+        background: transparent !important;
+        border-width: 1px !important;
+        border-style: solid !important;
+        border-radius: 4px !important;
+        padding: 14px !important;
+        text-decoration-color: rgb(0, 132, 137) !important;
+        color: #008489 !important;
+        font-weight: 600 !important;
+
+        @media (min-width: 744px) {
+            box-shadow: none !important;
+            text-align: left !important;
+            width: auto !important;
+            border-width: initial !important;
+            border-style: none !important;
+            border-color: initial !important;
+            border-image: initial !important;
+            padding: 4px 0px !important;
+        }
+    }
+}

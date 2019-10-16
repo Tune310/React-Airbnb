@@ -1,0 +1,79 @@
+.stay-background {
+    position: relative !important;
+    height: 260px !important;
+    border-radius: 3px !important;
+    overflow: hidden !important;
+    background: url("./images/stay-background.jpg");
+    background-size: cover !important;
+    background-position: center center !important;
+    @include display(flex);
+    @include justify-content(center);
+    @include align-items(center);
+
+    @media (min-width: 744px) {
+        height: 250px !important;
+    }
+
+    @media (min-width: 1128px) {
+        height: 300px !important;
+    }
+
+    .stay-plus {
+        display: block !important;
+        text-align: center !important;
+        margin-top: 44px !important;
+        margin-bottom: 24px !important;
+        @media (min-width: 744px) {
+            margin-top: 40px !important;
+        }
+
+        @media (min-width: 1128px) {
+            margin-top: 56px !important;
+        }
+    }
+    .stay-button-container {
+        @include display(flex);
+        @include flex-direction(column);
+        @include justify-content(center);
+        @include align-items(center);
+        margin-bottom: 100px !important;
+    }
+
+    .stay-button {
+        cursor: pointer !important;
+        display: inline-block !important;
+        position: relative !important;
+        text-align: center !important;
+        width: auto !important;
+        font-size: 14px !important;
+        line-height: 22px !important;
+        letter-spacing: normal !important;
+        font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
+        color: rgb(72, 72, 72) !important;
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+        font-weight: 800 !important;
+        box-shadow: none !important;
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+        min-width: 48.541px !important;
+        margin: 0px !important;
+        text-decoration: none !important;
+        border-radius: 4px !important;
+        border-width: 1px !important;
+        border-style: solid !important;
+        border-color: transparent !important;
+        background: rgb(255, 255, 255) !important;
+    }
+
+    .explore-stays {
+        overflow-wrap: break-word !important;
+        font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
+        font-size: 10px !important;
+        font-weight: 700 !important;
+        line-height: 1.2em !important;
+        letter-spacing: 0.1em !important;
+        color: rgb(72, 72, 72) !important;
+        margin: 0px !important;
+    }
+}

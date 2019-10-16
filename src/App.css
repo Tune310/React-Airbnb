@@ -156,6 +156,461 @@
   margin-right: 5px;
 }
 
+.video-container {
+  display: block !important;
+  height: auto !important;
+  position: relative !important;
+  text-align: left !important;
+  width: 100% !important;
+  background: #484848 !important;
+  border-style: none !important;
+  border-color: initial !important;
+  border-image: initial !important;
+  border-width: 0px !important;
+  overflow: hidden !important;
+  text-decoration: none !important;
+  height: 400px !important;
+}
+
+.video-player {
+  height: 100% !important;
+  width: 100% !important;
+  display: block !important;
+  object-fit: cover;
+}
+
+.video-content {
+  -webkit-box-align: center !important;
+  position: absolute !important;
+  top: 0px !important;
+  display: flex !important;
+  align-items: center !important;
+  text-align: center !important;
+  width: 100% !important;
+  padding-top: 32px !important;
+  padding-left: 32px !important;
+  padding-right: 32px !important;
+  z-index: 1 !important;
+  flex-flow: column !important;
+}
+
+@media (min-width: 744px) {
+  .video-content {
+    -webkit-box-pack: center !important;
+    -webkit-box-align: start !important;
+    align-items: flex-start !important;
+    justify-content: center !important;
+    padding-top: 0px !important;
+    padding-left: 48px !important;
+    text-align: left !important;
+    width: auto !important;
+    height: 100% !important;
+    max-width: 316px !important;
+  }
+}
+@media (min-width: 1128px) {
+  .video-content {
+    padding-left: 64px !important;
+    max-width: 448px !important;
+  }
+}
+.video-introducing {
+  font-size: 12px !important;
+  line-height: 16px !important;
+  letter-spacing: normal !important;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
+  text-transform: uppercase !important;
+  color: white !important;
+  padding-bottom: 16px !important;
+  font-weight: 600 !important;
+}
+
+@media (min-width: 1128px) {
+  .video-introducing {
+    font-size: 14px !important;
+    line-height: 18px !important;
+    padding-bottom: 24px !important;
+  }
+}
+.animals-logo img {
+  height: 80px;
+  width: auto;
+  object-fit: contain;
+  object-position: left center;
+  vertical-align: bottom;
+}
+
+.animals-learn-more a {
+  cursor: pointer !important;
+  display: inline-block !important;
+  position: relative !important;
+  text-align: center !important;
+  width: auto !important;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+  line-height: 18px !important;
+  letter-spacing: normal !important;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
+  color: #484848 !important;
+  margin: 0px !important;
+  text-decoration: none !important;
+  padding: 9px 16px !important;
+  border-width: 0px !important;
+  border-style: initial !important;
+  border-color: initial !important;
+  border-image: initial !important;
+  background: white !important;
+  border-radius: 8px !important;
+}
+
+@media (min-width: 1128px) {
+  .animals-learn-more a {
+    font-size: 16px !important;
+    line-height: 20px !important;
+    letter-spacing: normal !important;
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
+    color: #484848 !important;
+    padding: 14px 24px !important;
+  }
+}
+@media (min-width: 1128px) {
+  .animals-learn-more {
+    margin-top: 40px !important;
+  }
+}
+@media (min-width: 744px) {
+  .animals-learn-more {
+    margin-top: 20px;
+  }
+}
+.today-in-los-angeles-container {
+  padding-left: 24px !important;
+  padding-right: 24px !important;
+  max-width: 1600px !important;
+  margin-top: 32px !important;
+  margin-bottom: 32px !important;
+}
+@media (min-width: 744px) {
+  .today-in-los-angeles-container {
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+    margin-top: 40px !important;
+    margin-bottom: 40px !important;
+  }
+}
+@media (min-width: 1128px) {
+  .today-in-los-angeles-container {
+    position: relative !important;
+    max-width: 1760px !important;
+    padding-right: 80px !important;
+    padding-left: 80px !important;
+    margin: 0px auto !important;
+    margin-top: 40px !important;
+    margin-bottom: 40px !important;
+  }
+}
+.today-in-los-angeles-container h3 {
+  font-weight: 700 !important;
+  margin-bottom: 0px !important;
+  font-size: 24px !important;
+  line-height: 30px !important;
+  letter-spacing: normal !important;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
+  color: #484848 !important;
+  padding-top: 2px !important;
+  padding-bottom: 10px !important;
+}
+.today-in-los-angeles-container ul {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-inline-start: 0px;
+}
+.today-in-los-angeles-container li {
+  width: 20% !important;
+  margin-right: 15px;
+}
+.today-in-los-angeles-container a {
+  text-decoration: none !important;
+  color: #484848 !important;
+}
+.today-in-los-angeles-container .los-angeles-description {
+  overflow-wrap: break-word !important;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  line-height: 1.375em !important;
+  text-overflow: ellipsis !important;
+  max-height: 4.125em !important;
+  -webkit-line-clamp: 3 !important;
+  display: -webkit-box !important;
+  -webkit-box-orient: vertical !important;
+  margin: 0px !important;
+  overflow: hidden !important;
+}
+.today-in-los-angeles-container .los-angeles-city {
+  overflow-wrap: break-word !important;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
+  font-size: 12px !important;
+  font-weight: 700 !important;
+  line-height: 1.33333em !important;
+  color: #767676 !important;
+  text-transform: uppercase !important;
+  text-overflow: ellipsis !important;
+  max-width: 100% !important;
+  white-space: nowrap !important;
+  margin: 0px !important;
+  margin-top: 10px !important;
+  overflow: hidden !important;
+  display: inline-block !important;
+}
+.today-in-los-angeles-container .los-angeles-price {
+  overflow-wrap: break-word !important;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  line-height: 1.28571em !important;
+  color: inherit !important;
+  text-overflow: ellipsis !important;
+  max-height: 3.85714em !important;
+  -webkit-line-clamp: 3 !important;
+  display: -webkit-box !important;
+  -webkit-box-orient: vertical !important;
+  margin: 0px !important;
+  margin-top: 4px !important;
+  margin-bottom: 4px !important;
+  overflow: hidden !important;
+}
+.today-in-los-angeles-container .losangeles-image img {
+  width: 100%;
+}
+.today-in-los-angeles-container span.rating {
+  display: block !important;
+  will-change: transform !important;
+  background-size: 9px 9px !important;
+  width: 10px !important;
+  height: 10px !important;
+  background-image: url("./images/rating.svg") !important;
+  transform: none !important;
+  background-repeat: no-repeat !important;
+  margin: 0 2px !important;
+}
+.today-in-los-angeles-container .rating-number {
+  overflow-wrap: break-word !important;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
+  font-size: 11px !important;
+  font-weight: 700 !important;
+  line-height: 1.33333em !important;
+  color: inherit !important;
+  margin: 0px !important;
+  color: #008489 !important;
+}
+.today-in-los-angeles-container .rate {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  box-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  -ms-flex-align: center;
+}
+.today-in-los-angeles-container .los-angeles-votes {
+  overflow-wrap: break-word !important;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
+  font-size: 11px !important;
+  font-weight: 400 !important;
+  line-height: 1.33333em !important;
+  color: #767676 !important;
+  margin: 0px !important;
+}
+.today-in-los-angeles-container div.show-all {
+  display: inline-block !important;
+  text-align: left !important;
+  width: 100% !important;
+  margin-top: 8px !important;
+}
+@media (min-width: 744px) {
+  .today-in-los-angeles-container div.show-all {
+    margin-top: 4px !important;
+  }
+}
+.today-in-los-angeles-container div.show-all a {
+  cursor: pointer !important;
+  display: inline-block !important;
+  text-align: center !important;
+  text-decoration-line: none !important;
+  white-space: nowrap !important;
+  width: 100% !important;
+  background: transparent !important;
+  border-width: 1px !important;
+  border-style: solid !important;
+  border-radius: 4px !important;
+  padding: 14px !important;
+  text-decoration-color: #008489 !important;
+  color: #008489 !important;
+  font-weight: 600 !important;
+}
+@media (min-width: 744px) {
+  .today-in-los-angeles-container div.show-all a {
+    box-shadow: none !important;
+    text-align: left !important;
+    width: auto !important;
+    border-width: initial !important;
+    border-style: none !important;
+    border-color: initial !important;
+    border-image: initial !important;
+    padding: 4px 0px !important;
+  }
+}
+
+.stay-background {
+  position: relative !important;
+  height: 260px !important;
+  border-radius: 3px !important;
+  overflow: hidden !important;
+  background: url("./images/stay-background.jpg");
+  background-size: cover !important;
+  background-position: center center !important;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  box-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  box-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  -ms-flex-align: center;
+}
+@media (min-width: 744px) {
+  .stay-background {
+    height: 250px !important;
+  }
+}
+@media (min-width: 1128px) {
+  .stay-background {
+    height: 300px !important;
+  }
+}
+.stay-background .stay-plus {
+  display: block !important;
+  text-align: center !important;
+  margin-top: 44px !important;
+  margin-bottom: 24px !important;
+}
+@media (min-width: 744px) {
+  .stay-background .stay-plus {
+    margin-top: 40px !important;
+  }
+}
+@media (min-width: 1128px) {
+  .stay-background .stay-plus {
+    margin-top: 56px !important;
+  }
+}
+.stay-background .stay-button-container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  box-orient: vertical;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  box-direction: normal;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-direction: column;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  box-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  box-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  -ms-flex-align: center;
+  margin-bottom: 100px !important;
+}
+.stay-background .stay-button {
+  cursor: pointer !important;
+  display: inline-block !important;
+  position: relative !important;
+  text-align: center !important;
+  width: auto !important;
+  font-size: 14px !important;
+  line-height: 22px !important;
+  letter-spacing: normal !important;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
+  color: #484848 !important;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  font-weight: 800 !important;
+  box-shadow: none !important;
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+  min-width: 48.541px !important;
+  margin: 0px !important;
+  text-decoration: none !important;
+  border-radius: 4px !important;
+  border-width: 1px !important;
+  border-style: solid !important;
+  border-color: transparent !important;
+  background: white !important;
+}
+.stay-background .explore-stays {
+  overflow-wrap: break-word !important;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
+  font-size: 10px !important;
+  font-weight: 700 !important;
+  line-height: 1.2em !important;
+  letter-spacing: 0.1em !important;
+  color: #484848 !important;
+  margin: 0px !important;
+}
+
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -535,6 +990,76 @@ input.where:focus {
 
 .maximum-width {
   width: 100%;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+span.right-arrow {
+  color: #008489;
+  display: none !important;
+}
+@media (min-width: 744px) {
+  span.right-arrow {
+    display: inline !important;
+    margin-left: 6px !important;
+  }
+}
+span.right-arrow svg {
+  fill: currentColor;
+  width: 10px !important;
+  height: 10px !important;
+}
+
+.container {
+  padding-left: 24px !important;
+  padding-right: 24px !important;
+  max-width: 1600px !important;
+  margin-top: 32px !important;
+  margin-bottom: 32px !important;
+}
+@media (min-width: 744px) {
+  .container {
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+    margin-top: 40px !important;
+    margin-bottom: 40px !important;
+  }
+}
+@media (min-width: 1128px) {
+  .container {
+    position: relative !important;
+    max-width: 1760px !important;
+    padding-right: 80px !important;
+    padding-left: 80px !important;
+    margin: 0px auto !important;
+    margin-top: 40px !important;
+    margin-bottom: 40px !important;
+  }
+}
+
+h3 {
+  font-weight: 700 !important;
+  margin-bottom: 0px !important;
+  font-size: 24px !important;
+  line-height: 30px !important;
+  letter-spacing: normal !important;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
+  color: #484848 !important;
+  padding-top: 2px !important;
+  padding-bottom: 2px !important;
+}
+
+h4 {
+  font-size: 16px !important;
+  line-height: 22px !important;
+  letter-spacing: normal !important;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
+  color: #484848 !important;
+  font-weight: normal !important;
+  margin-top: 0px !important;
+  margin-bottom: 15px !important;
 }
 
 /*# sourceMappingURL=App.css.map */
