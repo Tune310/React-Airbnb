@@ -44,7 +44,7 @@ class LosAngeles extends React.Component {
                 id: 5,
                 desc: "Drink Coffee & Hang Out With 30+ Cats",
                 city: "Los Angeles",
-                src: require('../images/los-angeles-four.webp'),
+                src: require('../images/los-angeles-four.jpg'),
                 price: "From $28/person",
                 rating: 4.78,
                 votes: 168

@@ -611,6 +611,21 @@
   margin: 0px !important;
 }
 
+.slick-next:before, .slick-prev:before {
+  display: inline-block !important;
+  cursor: pointer !important;
+  text-align: center !important;
+  line-height: 1 !important;
+  position: relative !important;
+  touch-action: manipulation !important;
+  box-shadow: rgba(0, 0, 0, 0.14) 0px 1px 1px 1px !important;
+  border-radius: 50% !important;
+  border-width: 2px !important;
+  border-style: solid !important;
+  border-color: transparent !important;
+  background: white !important;
+}
+
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -1060,6 +1075,76 @@ h4 {
   font-weight: normal !important;
   margin-top: 0px !important;
   margin-bottom: 15px !important;
+}
+
+.slider {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  box-orient: vertical;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  box-direction: normal;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-direction: column;
+  height: 100% !important;
+  padding-left: 0px !important;
+  margin-bottom: 0px !important;
+  margin-top: 0px !important;
+  min-width: 100% !important;
+  scroll-snap-type: x mandatory !important;
+  list-style: none !important;
+}
+
+.slider-item {
+  width: 100% !important;
+  height: 264px !important;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  box-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+  display: flex !important;
+  padding: 0px 8px !important;
+  position: relative;
+}
+
+.slider-item h4 {
+  position: absolute;
+  overflow-wrap: break-word !important;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
+  font-size: 17.5px !important;
+  font-weight: 700 !important;
+  line-height: 1.44444em !important;
+  color: white !important;
+  text-align: center !important;
+  margin: 0px !important;
+  bottom: 0;
+}
+
+.slider-item img {
+  height: 100%;
+  width: 100% !important;
+  object-fit: cover !important;
 }
 
 /*# sourceMappingURL=App.css.map */

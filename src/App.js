@@ -5,6 +5,7 @@ import Explore from './components/Explore';
 import Movie from './components/Movie';
 import LosAngeles from './components/LosAngeles';
 import Stay from './components/Stay';
+import Recommended from './components/Recommended';
 import './App.css';
 import { Button } from 'reactstrap';
 
@@ -14,7 +15,8 @@ function App() {
     <Explore name="Explore Airbnb" />,
     <Movie />,
     <LosAngeles />,
-    <Stay />
+    <Stay />,
+    <Recommended />
   ];
 }
 
