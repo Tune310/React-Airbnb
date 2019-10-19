@@ -105,20 +105,26 @@ class Recommended extends React.Component {
 
     render() {
         var settings = {
-            dots: true,
+            infinite: false,
             speed: 500,
             slidesToShow: 5,
+            swipeToSlide: true,
             slidesToScroll: 1
           };
         return (
-            <div className="container">
+            <div className="container recommended-container">
                 <h3>Recommended for you</h3>
                 <div className="slider">
                     <Slider {...settings}>    
                         {this.state.sections.map ( section => 
                                 <div className="slider-item" style={{ backgroundImage: `url(${section.backgroundImg} !important)` }}>
-                                    <img src={section.backgroundImg} alt=""/>
-                                    <h4>{section.name}</h4>
+                                    <a href="#">
+                                        <img src={section.backgroundImg} alt=""/>
+                                        <div className="slider-content">
+                                            <h4>{section.name}</h4>
+                                            <span>${section.price}/night average</span>
+                                        </div>
+                                    </a>
                                 </div>
                         )}
                     </Slider>

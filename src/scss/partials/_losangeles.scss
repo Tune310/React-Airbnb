@@ -37,6 +37,7 @@
     ul {
         @include display(flex);
         padding-inline-start: 0px;
+        -webkit-padding-start: 0px !important;
     }
 
     li {

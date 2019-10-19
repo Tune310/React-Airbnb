@@ -1,14 +1,71 @@
+.recommended-container h3 {
+    padding-bottom: 10px !important;
+}
+
 .slick-next:before, .slick-prev:before {
-    display: inline-block !important;
+    display: flex !important;
+    @include display(flex);
+    @include justify-content(center);
+    @include align-items(center);
     cursor: pointer !important;
     text-align: center !important;
     line-height: 1 !important;
     position: relative !important;
     touch-action: manipulation !important;
+    color: black;
+}
+
+.slick-next:before {
+    content: '>';
+    position: absolute !important;
+    left: 50%;
+    transform: translate(-3px, -3px) !important;
+}
+
+.slick-prev:before {
+    content: '<';
+    transform: translate(6px, -3px) !important;
+}
+
+.slick-slide {
+    padding: 0 8px !important;
+}
+
+.slick-prev {
+    display: flex !important;
+    @include display(flex);
+    @include align-items(center);
+    z-index: 8;
+    position: absolute;
+    left: -8px !important;
+    width: 32px;
+    height: 32px;
     box-shadow: rgba(0, 0, 0, 0.14) 0px 1px 1px 1px !important;
     border-radius: 50% !important;
     border-width: 2px !important;
     border-style: solid !important;
     border-color: transparent !important;
     background: rgb(255, 255, 255) !important;
+}
+
+.slick-next {
+    display: flex !important;
+    @include display(flex);
+    @include justify-content(center);
+    @include align-items(center);
+    z-index: 8;
+    position: absolute;
+    right: -8px !important;
+    width: 32px;
+    height: 32px;
+    box-shadow: rgba(0, 0, 0, 0.14) 0px 1px 1px 1px !important;
+    border-radius: 50% !important;
+    border-width: 2px !important;
+    border-style: solid !important;
+    border-color: transparent !important;
+    background: rgb(255, 255, 255) !important;
+}
+
+.slick-disabled {
+    display: none !important;
 }
