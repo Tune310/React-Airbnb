@@ -20,28 +20,32 @@ export default class Example extends React.Component {
     }));
   }
 
-  decrementScore = () => {
+  decrementScore = (e) => {
+    e.preventDefault();
     this.setState( prevState => ({
       guests: prevState.guests - 1,
       totalGuests: prevState.totalGuests - 1
     }))
   }
 
-  incrementScore = () => {
+  incrementScore = (e) => {
+    e.preventDefault();
     this.setState( prevState => ({
       guests: prevState.guests + 1,
       totalGuests: prevState.totalGuests + 1
     }))
   }
 
-  decrementChildren = () => {
+  decrementChildren = (e) => {
+    e.preventDefault();
     this.setState( prevState => ({
       children: prevState.children - 1,
       totalGuests: prevState.totalGuests - 1
     }))
   }
 
-  incrementChildren = () => {
+  incrementChildren = (e) => {
+    e.preventDefault();
     this.setState( prevState => ({
       children: prevState.children + 1,
       totalGuests: prevState.totalGuests + 1
