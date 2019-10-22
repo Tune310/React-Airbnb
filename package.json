@@ -2,6 +2,10 @@
   "name": "react-project",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "npm": "6.5.0",
+    "node": "11.9.0"
+  },
   "dependencies": {
     "@vaadin/vaadin-date-picker": "^4.0.3",
     "bootstrap": "^4.3.1",
