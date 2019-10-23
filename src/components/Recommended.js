@@ -106,7 +106,7 @@ class Recommended extends React.Component {
     render() {
         var settings = {
             infinite: false,
-            speed: 500,
+            speed: 300,
             slidesToShow: 5,
             swipeToSlide: true,
             slidesToScroll: 1
