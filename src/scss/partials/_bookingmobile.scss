@@ -1,0 +1,58 @@
+.booking-mobile {
+    display: none;
+    background: #ffffff !important;
+    border-radius: 4px !important;
+    padding: 32px !important;
+    padding-bottom: 24px !important;
+    width: 100% !important;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12) !important;
+
+    @media (max-width: 743px) {
+        display: block;
+    }
+
+    input.where {
+        border: none;
+        width: 100%;
+    }
+
+    h1 {
+      font-size: 32px;
+      font-weight: 600;
+    }
+
+    vaadin-date-picker {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+    
+    span {
+        font-size: 12px !important;
+        font-weight: 700 !important;
+        letter-spacing: 1px !important;
+        margin-top: 8px !important;
+        margin-bottom: 8px !important;
+        display: block;
+    }
+
+    .button-search {
+        width: 100% !important;
+    }
+
+  }
+
+  .booking-mobile-head-container {
+      @include display(flex);
+      padding-top: 120px;
+      padding-left: 24px !important;
+      padding-right: 24px !important;
+
+      @media (min-width: 744px) {
+          display: none;
+      }
+  }
+  .booking-mobile-header {
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+  }

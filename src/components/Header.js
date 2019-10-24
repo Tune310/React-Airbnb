@@ -17,6 +17,9 @@ const Header = () => {
 				</div>
 			</header>
 			<Booking />
+			<div className="booking-mobile-head-container">
+				<h1 className="booking-mobile-header">Book unique places to stay and things to do.</h1>
+			</div>
 		</div>
 	)
 }

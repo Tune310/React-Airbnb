@@ -10,6 +10,8 @@
 
 @import "partials/recommended";
 
+@import "partials/bookingmobile";
+
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -46,6 +48,11 @@
     background-repeat: no-repeat;
     min-height: 100vh;
     padding-bottom: 70px;
+
+    @media (max-width: 743px) {
+      min-height: 45vh;
+      padding-bottom: 0px;
+    }
   }
   
   .navbar {
@@ -89,6 +96,10 @@
     width: 441px !important;
     box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12) !important;
     margin-left: 80px;
+    
+    @media (max-width: 743px) {
+      display: none;
+    }
 
     h1 {
       font-size: 32px;

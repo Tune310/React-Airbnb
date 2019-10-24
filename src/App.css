@@ -15,6 +15,7 @@
 .explore-airbnb h3 {
   font-size: 24px;
   font-weight: 700;
+  background-color: white;
 }
 
 .explore-airbnb span {
@@ -746,6 +747,68 @@
   display: none !important;
 }
 
+.booking-mobile {
+  display: none;
+  background: #ffffff !important;
+  border-radius: 4px !important;
+  padding: 32px !important;
+  padding-bottom: 24px !important;
+  width: 100% !important;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12) !important;
+}
+@media (max-width: 743px) {
+  .booking-mobile {
+    display: block;
+  }
+}
+.booking-mobile input.where {
+  border: none;
+  width: 100%;
+}
+.booking-mobile h1 {
+  font-size: 32px;
+  font-weight: 600;
+}
+.booking-mobile vaadin-date-picker {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+.booking-mobile span {
+  font-size: 12px !important;
+  font-weight: 700 !important;
+  letter-spacing: 1px !important;
+  margin-top: 8px !important;
+  margin-bottom: 8px !important;
+  display: block;
+}
+.booking-mobile .button-search {
+  width: 100% !important;
+}
+
+.booking-mobile-head-container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 120px;
+  padding-left: 24px !important;
+  padding-right: 24px !important;
+}
+@media (min-width: 744px) {
+  .booking-mobile-head-container {
+    display: none;
+  }
+}
+
+.booking-mobile-header {
+  font-size: 30px;
+  font-weight: 700;
+  color: white;
+}
+
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -791,6 +854,12 @@
   background-repeat: no-repeat;
   min-height: 100vh;
   padding-bottom: 70px;
+}
+@media (max-width: 743px) {
+  .header-container {
+    min-height: 45vh;
+    padding-bottom: 0px;
+  }
 }
 
 .navbar {
@@ -854,6 +923,11 @@
   width: 441px !important;
   box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12) !important;
   margin-left: 80px;
+}
+@media (max-width: 743px) {
+  .booking {
+    display: none;
+  }
 }
 .booking h1 {
   font-size: 32px;
