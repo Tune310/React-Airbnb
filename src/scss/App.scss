@@ -12,6 +12,8 @@
 
 @import "partials/bookingmobile";
 
+@import "partials/navbar_mobile";
+
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -55,14 +57,18 @@
     }
   }
   
-  .navbar {
+  .main-navbar {
     @include display(flex);
     @include align-items(center);
     height: 80px;
     color: white;
+    
+    @media (max-width: 743px) {
+      display: none !important;
+    }
   }
   
-  .navbar svg {
+  .main-navbar svg {
     height: 1em;
     width: 2em;
     display: block;
@@ -70,16 +76,16 @@
     font-size: 34px;
   }
   
-  .navbar ul {
+  .main-navbar ul {
     @include display(flex);
     margin-left: auto;
   }
   
-  .navbar ul li {
+  .main-navbar ul li {
     list-style-type: none;
   }
   
-  .navbar ul li a {
+  .main-navbar ul li a {
     color: #ffffff;
     margin-right: 15px;
     margin-left: 15px;
