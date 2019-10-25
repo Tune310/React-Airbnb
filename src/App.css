@@ -839,6 +839,7 @@
   align-self: center;
   -ms-flex-item-align: center;
   margin-left: -10px;
+  transition: 0.5s;
 }
 
 #mobile-dropdown {
@@ -913,6 +914,7 @@
 }
 .rotated {
   transform: rotate(180deg);
+  transition: 0.5s;
 }
 
 .full-height {
