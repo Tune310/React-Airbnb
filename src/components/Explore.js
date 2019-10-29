@@ -8,7 +8,9 @@ const Explore = (props) => {
                 <li>
                     <a href="#">
                         <div className="explore-column">
-                            <div className="div-left-one"></div>
+                            <div className="div-left div-left-one">
+                                <img src={require('../images/explore-one.jpg')} alt=""/>
+                            </div>
                             <div className="div-right">
                                 <span>Stays</span>
                             </div>
@@ -18,7 +20,9 @@ const Explore = (props) => {
                 <li>
                     <a href="#">
                         <div className="explore-column">
-                            <div className="div-left-two"></div>
+                            <div className="div-left div-left-two">
+                            <img src={require('../images/explore-two.jpg')} alt=""/>
+                            </div>
                             <div className="div-right">
                                 <span>Experiences</span>
                             </div>
@@ -28,7 +32,9 @@ const Explore = (props) => {
                 <li>
                     <a href="#">
                         <div className="explore-column">
-                            <div className="div-left-three"></div>
+                            <div className="div-left div-left-three">
+                            <img src={require('../images/explore-three.jpg')} alt=""/>
+                            </div>
                             <div className="div-right">
                                 <span>Adventures</span>
                             </div>
@@ -38,7 +44,9 @@ const Explore = (props) => {
                 <li>
                     <a href="#">
                         <div className="explore-column">
-                            <div className="div-left-four"></div>
+                            <div className="div-left div-left-four">
+                            <img src={require('../images/explore-four.jpg')} alt=""/>
+                            </div>
                             <div className="div-right">
                                 <span>Restaraunts</span>
                             </div>

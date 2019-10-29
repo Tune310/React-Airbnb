@@ -14,10 +14,31 @@
     }
 }
 
+@media screen and (min-width: 744px) {
+    .explore-airbnb {
+        padding-left: 40px !important;
+        padding-right: 40px !important;
+        padding-top: 30px !important;
+        padding-bottom: 30px !important;
+        background-color: white !important;
+    }
+}
+
+@media screen and (max-width: 743px) {
+   .explore-airbnb{
+        padding-left: 24px !important;
+        padding-right: 24px !important;
+        padding-top: 20px !important;
+        padding-bottom: 20px !important;
+        background-color: white !important;
+   } 
+}
+
 .explore-airbnb h3 {
     font-size: 24px;
     font-weight: 700;
     background-color: white;
+    padding-bottom: 10px !important;
 }
 
 .explore-airbnb span {
@@ -25,6 +46,9 @@
     font-weight: 600;
     position: relative;
     bottom: 5px;
+    @media (max-width: 743px) {
+        font-size: 13px !important;
+    }
 }
 .explore-ul {
         @include display(flex);
@@ -51,57 +75,59 @@
             border-style: solid !important;
             border-color: transparent !important;
             width: 25% !important;
+
+            img {
+                width: 100%;
+                height: 100%;
+                display: block;
+                @media (min-width: 744px) {
+                    display: none;
+                }
+            }
         }
 
         .div-left-one {
-            width: 100% !important;
-            height: 100vh !important;
-            overflow: auto !important;
             background: url('./images/explore-one.jpg') !important;
-            position: relative !important;
-            background-size: contain !important;
-            background-repeat: no-repeat !important;
         }
 
         .div-left-two {
-            width: 100% !important;
-            height: 100vh !important;
-            overflow: auto !important;
             background: url('./images/explore-two.jpg') !important;
-            position: relative !important;
-            background-size: contain !important;
-            background-repeat: no-repeat !important;
         }
 
         .div-left-three {
-            width: 100% !important;
-            height: 100vh !important;
-            overflow: auto !important;
             background: url('./images/explore-three.jpg') !important;
-            position: relative !important;
-            background-size: contain !important;
-            background-repeat: no-repeat !important;
         }
 
         .div-left-four {
-            width: 100% !important;
-            height: 100vh !important;
-            overflow: auto !important;
             background: url('./images/explore-four.jpg') !important;
+        }
+
+        .div-left {
+            width: 100% !important;
+            height: 100% !important;
+            overflow: auto !important;
             position: relative !important;
-            background-size: contain !important;
+            background-size: 100% 100% !important;
             background-repeat: no-repeat !important;
+            @media (min-width: 1250px) {
+                background-size: contain !important;
+                height: 100vh !important;
+            }
         }
 
         .div-right {
             width: 100% !important;
             vertical-align: middle !important;
             white-space: normal !important;
-            padding: 2px 16px 10px !important;
+            padding: 10px 16px 10px !important;
             @include display(flex);
             height: 30% !important;
             @include align-items(center);
             overflow: hidden;
+            @media (max-width: 743px) {
+                @include justify-content(center);
+                padding: 16px 16px 10px !important;
+            }
         }
 
         .explore-column {
@@ -122,5 +148,17 @@
             height: 234px;
             overflow: hidden !important;
             margin-right: 5px;
+
+            @media (max-width: 1123px) {
+                height: 204px !important;
+            }
+
+            @media (max-width: 1000px) {
+                height: 175px !important;
+            }
+
+            @media (max-width: 743px) {
+                height: 124px !important;
+            }
         }
 }

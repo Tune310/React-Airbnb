@@ -69,3 +69,14 @@
 .slick-disabled {
     display: none !important;
 }
+
+.slick-list {
+        overflow-y: hidden;
+        overflow-x: auto;
+        overflow: -moz-scrollbars-none;
+        -ms-overflow-style: none;
+}
+
+.slick-list::-webkit-scrollbar { 
+    width: 0 !important 
+}

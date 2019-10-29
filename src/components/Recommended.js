@@ -109,7 +109,18 @@ class Recommended extends React.Component {
             speed: 300,
             slidesToShow: 5,
             swipeToSlide: true,
-            slidesToScroll: 1
+            slidesToScroll: 1,
+            responsive: [
+                {
+                  breakpoint: 763,
+                  settings: {
+                    slidesToShow: 2.13,
+                    slidesToScroll: 1,
+                    arrows: false
+                  }
+                }
+            ]
+                
           };
         return (
             <div className="container recommended-container">
