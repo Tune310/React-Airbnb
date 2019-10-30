@@ -400,9 +400,31 @@
   padding-inline-start: 0px;
   -webkit-padding-start: 0px !important;
 }
+@media (max-width: 743px) {
+  .today-in-los-angeles-container ul {
+    -webkit-box-lines: multiple;
+    -moz-box-lines: multiple;
+    box-lines: multiple;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+}
 .today-in-los-angeles-container li {
   width: 20% !important;
   margin-right: 15px;
+}
+@media (max-width: 743px) {
+  .today-in-los-angeles-container li {
+    width: 45% !important;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 743px) {
+  .today-in-los-angeles-container li:last-child {
+    margin-bottom: 5px !important;
+  }
 }
 .today-in-los-angeles-container a {
   text-decoration: none !important;
@@ -931,20 +953,19 @@
   z-index: 8888;
 }
 
-.overlay {
+.mobile-overlay {
   height: 0%;
   width: 100%;
   position: fixed;
   z-index: 88;
   top: 0;
   left: 0;
-  background-color: black;
   background-color: rgba(0, 0, 0, 0.9);
   overflow-y: hidden;
   transition: 0.5s;
 }
 
-.overlay-content {
+.mobile-overlay-content {
   position: relative;
   top: 15%;
   width: 100%;
@@ -952,7 +973,7 @@
   margin-top: 30px;
 }
 
-.overlay a {
+.mobile-overlay a {
   padding: 8px;
   text-decoration: none;
   font-size: 36px;
@@ -961,23 +982,17 @@
   transition: 0.3s;
 }
 
-.overlay a:hover, .overlay a:focus {
+.mobile-overlay a:hover, .overlay a:focus {
   color: #f1f1f1;
 }
 
 @media screen and (max-height: 450px) {
-  .overlay {
+  .mobile-overlay {
     overflow-y: auto;
   }
 
-  .overlay a {
+  .mobile-overlay a {
     font-size: 20px;
-  }
-
-  .overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
   }
 }
 .rotated {

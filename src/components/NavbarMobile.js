@@ -4,7 +4,7 @@ import React from 'react';
 class NavbarMobile extends React.Component  {
 
   toggleNav = () => {
-     document.getElementById("myNav").classList.toggle('full-height');
+     document.getElementById("mobile-nav").classList.toggle('full-height');
      
 
      var mobileExpand = document.getElementById('mobile-expand');
@@ -17,8 +17,8 @@ class NavbarMobile extends React.Component  {
   render() {
     return (
         <div className="navbar-mobile">
-        <div id="myNav" className="overlay">
-            <div className="overlay-content">
+        <div id="mobile-nav" className="mobile-overlay">
+            <div className="mobile-overlay-content">
                 <a href="#">Host a home</a>
                 <a href="#">Host an experience</a>
                 <a href="#">Help</a>
