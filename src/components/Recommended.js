@@ -108,10 +108,7 @@ class Recommended extends React.Component {
             infinite: false,
             speed: 300,
             slidesToShow: 5,
-            draggable: false,
-            touchMove: false,
-            swipeToSlide: false,
-            swipe: false,
+            swipeToSlide: true,
             slidesToScroll: 1,
             responsive: [
                 {
