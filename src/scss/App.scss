@@ -270,7 +270,9 @@
   }
   
   .counter-action {
-    display: inline-block !important;
+    @include display(flex);
+    @include justify-content(center);
+    @include align-items(center);
     cursor: pointer !important;
     text-align: center !important;
     line-height: 1 !important;
